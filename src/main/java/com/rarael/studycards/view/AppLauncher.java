@@ -7,7 +7,7 @@ import javafx.stage.Stage;
 
 public class AppLauncher extends Application {
 
-  public void start(Stage stage) throws Exception {
+  public void start(Stage stage){
     stage.setTitle("STUDY SET");
     Scene scene = new Scene(new StackPane());
     stage.setScene(scene);
