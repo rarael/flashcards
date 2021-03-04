@@ -18,4 +18,7 @@ public class FlashCards {
     public Collection<String> getAnswers() {
         return set.values();
     }
+    public int getSize() {
+        return set.size();
+    }
 }
