@@ -1,27 +1,27 @@
 package com.rarael.studycards.controller;
 
-import org.apache.maven.model.Model;
+import com.rarael.studycards.model.ModelImpl;
 
 public class ControllerImpl implements Controller {
-  private Model model;
+  private ModelImpl model;
 
-  public ControllerImpl(Model model) {
+  public ControllerImpl(ModelImpl model) {
     this.model = model;
   }
 
   public void nextQuestion() {
-
+    model.nextQuestion();
   }
 
   public void previousQuestion() {
-
+    model.previousQuestion();
   }
 
   public boolean showingAnswer() {
-    return false;
+    return model.showingAnswer();
   }
 
   public void toggleAnswer() {
-
+    model.toggleAnswer();
   }
 }
